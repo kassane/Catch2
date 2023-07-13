@@ -11,7 +11,7 @@ jobs:
           - x86_64-linux-gnu
           - x86_64-linux-musl
           - x86-linux-gnu
-          - x86-linux-musl
+#           - x86-linux-musl
           - aarch64-linux-gnu
           - aarch64-linux-musl
           - riscv64-linux-musl
@@ -21,7 +21,7 @@ jobs:
           - x86_64-macos
           - aarch64-macos
           - x86_64-windows
-          # - x86-windows
+          - x86-windows
           - aarch64-windows
 
     runs-on: ubuntu-latest
