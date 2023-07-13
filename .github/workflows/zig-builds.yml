@@ -15,13 +15,13 @@ jobs:
           - aarch64-linux-gnu
           - aarch64-linux-musl
           - riscv64-linux-musl
-          - mipsel-linux-musl
-          - mips-linux-musl
+          # - mipsel-linux-musl
+          # - mips-linux-musl
           - powerpc64-linux-musl
           - x86_64-macos
           - aarch64-macos
           - x86_64-windows
-          - x86-windows
+          # - x86-windows
           - aarch64-windows
 
     runs-on: ubuntu-latest
