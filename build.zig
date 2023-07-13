@@ -17,8 +17,8 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
         .version = .{
             .major = 3,
-            .minor = 2,
-            .patch = 2,
+            .minor = 4,
+            .patch = 0,
         },
     });
     const config = b.addConfigHeader(.{
@@ -192,7 +192,7 @@ pub fn build(b: *std.Build) void {
         else => lib.strip = true,
     }
     lib.installHeadersDirectoryOptions(.{
-        .source_dir = "src",
+        .source_dir = .{ .path = "src" },
         .install_dir = .header,
         .install_subdir = "",
         .exclude_extensions = &.{
